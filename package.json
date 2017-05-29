@@ -1,0 +1,46 @@
+{
+  "name": "doser",
+  "version": "0.1.0",
+  "description": "Lightweight ES2015+ dependency injection written in ES6",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "babel --copy-files --out-dir dist src",
+    "lint": "eslint src",
+    "validate": "npm-run-all --parallel lint build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sperrichon/doser.git"
+  },
+  "keywords": [
+    "open source",
+    "npm",
+    "library",
+    "doser",
+    "dependency",
+    "injection",
+    "lightweight",
+    "es2015",
+    "es6"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "name": "sperrichon",
+    "email": "sperrichon@users.noreply.github.com",
+    "url": "https://github.com/sperrichon"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "eslint": "^3.12.2",
+    "npm-run-all": "^3.1.2",
+    "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "weakmap": "0.0.6"
+  }
+}
