@@ -60,6 +60,25 @@ class Doser {
             factory 
         };
     } 
+    
+    makePublicProxy() {
+        const proxy = {};
+        
+        for(let key in _(this)) {
+            if(_(this)[key].isPrivate) continue;
+            console.log(key);
+            Object.defineProperty(
+                proxy,
+                key,
+                {
+                    get: this.get.bind(this, key),
+                    enumerable: true
+                }
+            );
+        }
+        
+        return Object.freeze(proxy);
+    }
 }
 
 

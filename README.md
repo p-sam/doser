@@ -44,4 +44,8 @@ container.has('unknown_key'); //false
 
 const product_service = container.get('product_service');
 product_service.list();
+
+const proxy = container.makePublicProxy(); //returns a freezed object with getters for each registered public key
+proxy.product_service.list();
+
 ```
