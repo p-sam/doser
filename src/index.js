@@ -61,6 +61,22 @@ class Doser {
         };
     } 
     
+    registerPrimitive(key, primitive, isPrivate) {
+        if(this.has(key)) {
+            throw new DoserError(`Key '${key}' already registered`);
+        }
+        
+        if(!isPrimitive(primitive)) {
+            throw new DoserError('Primitive value expected');
+        }
+        
+        _(this)[key] = {
+            resolved: true,
+            isPrivate: !!isPrivate,
+            instance: primitive 
+        };
+    } 
+    
     makePublicProxy() {
         const proxy = {};
         

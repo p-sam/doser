@@ -35,7 +35,7 @@ class ProductService {
 
 const container = new Doser();
 
-container.register('DATABASE_CONNECTION_URL', () => DATABASE_CONNECTION_URL, true);
+container.registerPrimitive('DATABASE_CONNECTION_URL', DATABASE_CONNECTION_URL, true);
 container.register('database', (inject) => new DatabaseConnection(inject('DATABASE_CONNECTION_URL'), true));
 container.register('product_service', (inject) => new ProductService(inject('database')));
 
