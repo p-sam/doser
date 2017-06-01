@@ -1,6 +1,6 @@
 {
   "name": "doser",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Lightweight ES2015+ dependency injection written in ES6",
   "main": "dist/index.js",
   "scripts": {

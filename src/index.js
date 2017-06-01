@@ -82,7 +82,7 @@ class Doser {
         
         for(let key in _(this)) {
             if(_(this)[key].isPrivate) continue;
-            console.log(key);
+            
             Object.defineProperty(
                 proxy,
                 key,
