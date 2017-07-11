@@ -1,7 +1,7 @@
 {
   "name": "doser",
   "version": "0.3.2",
-  "description": "Lightweight ES2015+ dependency injection written in ES6",
+  "description": "Lightweight ES5+ dependency injection written in ES6",
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
