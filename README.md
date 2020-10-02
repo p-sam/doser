@@ -4,7 +4,7 @@
 [![downloads](https://img.shields.io/npm/dm/doser.svg?style=flat-square)](http://npm-stat.com/charts.html?package=doser&from=2017-01-01)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
-Lightweight ES5+ dependency injection written in ES6
+Lightweight ES5+ dependency injection written in ES6.
 
 ## Installation
 
